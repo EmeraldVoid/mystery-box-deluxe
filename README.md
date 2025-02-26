@@ -4,39 +4,66 @@
 
 ---
 
-Mystery Box Deluxe is a randomizer that will randomly generate a randomized seed file for you to use with the [Goemon Randomizer](https://github.com/abyssonym/mn64rando) by [abyssonym](https://www.github.com/abyssonym).
+# Mystery Box Deluxe
 
-The project got its name because it is a randomizer for a randomizer. Couple that with the fact that seeds are random from person to person (even if using the same settings), and it just adds to the random chaos. It is a silly tool that I made purely for the fun of chaos.
+Mystery Box Deluxe is a randomizer that generates a randomized seed file for use with the [Goemon Randomizer](https://github.com/abyssonym/mn64rando) by [abyssonym](https://www.github.com/abyssonym).
 
-The seeds this tool generates may or may not work. I am just pumping them out for fun and thought I would share them with you. Give this little application a try.
+This project got its name because it is a randomizer for a randomizer. Since seeds are unique per person (even with the same settings), it adds an extra layer of chaos. This tool was made purely for fun.
 
 **Be sure to get the latest release!**
 
-# Mystery Box Deluxe
+---
 
-![Python Version](https://img.shields.io/badge/python-3.x-blue)
-![License](https://img.shields.io/github/license/yourusername/mystery-box-deluxe)
-![Last Commit](https://img.shields.io/github/last-commit/yourusername/mystery-box-deluxe)
+## Features
+- Automatically generates a randomized YAML seed file.
+- Compatible with the Goemon Randomizer.
+- Simple and lightweight Python script.
 
-## Note
-This script was written for use with the Windows download and not the `.py` version of the randomizer.
+---
 
 ## Installation & Usage
 
-### Step 1: Download
-Head over to the [latest releases](www.google.com) to get the most up-to-date version. You can save this file anywhere, but it's recommended to place it in its own folder where you have the randomizer installed.
+### **Step 1: Download**
+Head over to the [latest releases](www.google.com) to get the most up-to-date version. Place this file in a dedicated folder alongside the Goemon Randomizer.
 
-### Step 2: Launch the Script
-Run `Mystery_Box_Deluxe.py` and wait. Use the following instructions based on your OS:
+### **Step 2: Set Up a Virtual Environment (Recommended)**
+To keep dependencies isolated, create and activate a virtual environment:
 
-#### Windows
-- Double-click the `.py` file if Python is correctly installed.
+#### **Windows**
+```sh
+python -m venv venv
+venv\Scripts\activate
+```
+
+#### **Mac/Linux**
+```sh
+python3 -m venv venv
+source venv/bin/activate
+```
+
+### **Step 3: Install Dependencies**
+Ensure `pyyaml` is installed by running:
+```sh
+pip install pyyaml
+```
+To make it easier for others to install dependencies, generate a `requirements.txt` file:
+```sh
+pip freeze > requirements.txt
+```
+Users can install dependencies by running:
+```sh
+pip install -r requirements.txt
+```
+
+### **Step 4: Run the Script**
+#### **Windows**
+- Double-click the `.py` file if Python is installed.
 - Alternatively, open a terminal (`cmd` or `PowerShell`) and run:
   ```sh
   python Mystery_Box_Deluxe.py
   ```
 
-#### Mac/Linux
+#### **Mac/Linux**
 - Open a terminal and navigate to the script's directory:
   ```sh
   cd /path/to/script
@@ -46,44 +73,28 @@ Run `Mystery_Box_Deluxe.py` and wait. Use the following instructions based on yo
   python3 Mystery_Box_Deluxe.py
   ```
 
-### Step 3: Choose a Save Location
-When prompted, type or paste the path to the folder where you want to save the output file.
+### **Step 5: Locate the Output File**
+The script will automatically save the generated YAML file inside a folder named **`Random Seeds`** in the same directory as the script.
 
-#### Finding a Folder Path
-- **Windows**: Shift + Right-click the folder → Select "Copy as path"
-- **Mac**: Right-click the folder → Select "Get Info" → Copy the "Where" field
-- **Linux**: Navigate to the folder in a terminal and use `pwd`
+To find your file:
+- Navigate to the folder where `Mystery_Box_Deluxe.py` is located.
+- Open the **`Random Seeds`** folder.
+- The newly generated YAML file will be inside, with a timestamped filename.
 
-### Step 4: Copy the Output
-- Navigate to the directory where your output text file is saved.
-- Open the file and press `Ctrl + A`, then `Ctrl + C` to copy the text to your clipboard.
+### **Step 6: Copy the Output to mn64_settings.yaml**
+- Navigate to `mn64_settings.yaml`.
+- Open it and replace the contents with the generated YAML file.
+- Save the file (`Ctrl + S`).
 
-### Step 5: Modify mn64_settings.yaml
-- Navigate to the location of your `mn64_settings.yaml` file.
-- Press `Ctrl + A` to select all text.
-- Press `Ctrl + V` to paste the new code.
-- Press `Ctrl + S` to save.
+### **Step 7: Run the Randomizer**
+- Open `mn64rando.exe` and wait.
+- The output will contain a playable ROM with the randomized settings.
 
-### Step 6: Setup the Randomizer
-Follow the setup directions for the [Goemon Randomizer](https://github.com/abyssonym/mn64rando).
-
-### Step 7: Run the Randomizer
-- Execute `mn64rando.exe` and wait.
-- After the allotted time set by Mystery Box Deluxe, you will have a playable ROM with the randomized settings you created.
-
-### Step 8: Enjoy!
+### **Step 8: Enjoy!**
 Have fun with your randomized experience!
 
 ---
 
-## License
-This project is licensed under the [MIT License](LICENSE).
-
 ## Contributing
 Pull requests are welcome! Please ensure your contributions align with the project's goals and coding standards.
-
-## Issues
-If you encounter any problems, please open an issue in the [GitHub repository](https://github.com/yourusername/mystery-box-deluxe/issues).
-
-
 
