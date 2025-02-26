@@ -10,7 +10,7 @@ Mystery Box Deluxe is a randomizer that generates a randomized seed file for use
 
 This project got its name because it is a randomizer for a randomizer. Since seeds are unique per person (even with the same settings), it adds an extra layer of chaos. This tool was made purely for fun.
 
-**Be sure to get the latest release!**
+**Be sure to get the [latest release!](https://github.com/EmeraldVoid/mystery-box-deluxe/releases)**
 
 ---
 
