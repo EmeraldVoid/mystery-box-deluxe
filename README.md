@@ -46,14 +46,6 @@ Ensure `pyyaml` is installed by running:
 ```sh
 pip install pyyaml
 ```
-To make it easier for others to install dependencies, generate a `requirements.txt` file:
-```sh
-pip freeze > requirements.txt
-```
-Users can install dependencies by running:
-```sh
-pip install -r requirements.txt
-```
 
 ### **Step 4: Run the Script**
 #### **Windows**
